@@ -60,13 +60,13 @@
 #include <string.h>
 #include <stdlib.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/hmac.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/hmac/hmac.h"
 
 #undef BUFSIZE
 #define BUFSIZE	1024*8

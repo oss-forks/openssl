@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/opensslconf.h>
+#include "../crypto/opensslconf.h"
 /* Until the key-gen callbacks are modified to use newer prototypes, we allow
  * deprecated functions for openssl-internal code */
 #ifdef OPENSSL_NO_DEPRECATED
@@ -69,14 +69,14 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/rand.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/bn/bn.h"
+#include "../crypto/rsa/rsa.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/rand/rand.h"
 
 #define DEFBITS	1024
 #undef PROG

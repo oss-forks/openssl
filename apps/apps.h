@@ -112,20 +112,20 @@
 #ifndef HEADER_APPS_H
 #define HEADER_APPS_H
 
-#include "e_os.h"
+#include "../e_os.h"
 
-#include <openssl/bio.h>
-#include <openssl/x509.h>
-#include <openssl/lhash.h>
-#include <openssl/conf.h>
-#include <openssl/txt_db.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/lhash/lhash.h"
+#include "../crypto/conf/conf.h"
+#include "../crypto/txt_db/txt_db.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 #ifndef OPENSSL_NO_OCSP
-#include <openssl/ocsp.h>
+#include "../crypto/ocsp/ocsp.h"
 #endif
-#include <openssl/ossl_typ.h>
+#include "../crypto/ossl_typ.h"
 
 int app_RAND_load_file(const char *file, BIO *bio_e, int dont_warn);
 int app_RAND_write_file(const char *file, BIO *bio_e);

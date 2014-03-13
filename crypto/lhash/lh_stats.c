@@ -61,12 +61,12 @@
 #include <stdlib.h>
 /* If you wish to build this outside of SSLeay, remove the following lines
  * and things should work as expected */
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef OPENSSL_NO_BIO
-#include <openssl/bio.h>
+#include "../bio/bio.h"
 #endif
-#include <openssl/lhash.h>
+#include "../lhash/lhash.h"
 
 #ifdef OPENSSL_NO_BIO
 

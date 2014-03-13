@@ -113,23 +113,23 @@
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/evp.h>
-#include <openssl/crypto.h>
-#include <openssl/bn.h>
+#include "../crypto/evp/evp.h"
+#include "../crypto/crypto.h"
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_MD2
-# include <openssl/md2.h>
+# include "../crypto/md2/md2.h"
 #endif
 #ifndef OPENSSL_NO_RC4
-# include <openssl/rc4.h>
+# include "../crypto/rc4/rc4.h"
 #endif
 #ifndef OPENSSL_NO_DES
-# include <openssl/des.h>
+# include "../crypto/des/des.h"
 #endif
 #ifndef OPENSSL_NO_IDEA
-# include <openssl/idea.h>
+# include "../crypto/idea/idea.h"
 #endif
 #ifndef OPENSSL_NO_BF
-# include <openssl/blowfish.h>
+# include "../crypto/bf/blowfish.h"
 #endif
 
 #undef PROG

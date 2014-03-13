@@ -61,11 +61,11 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/crypto.h>
-#include <openssl/pem.h>
-#include <openssl/err.h>
-#include <openssl/x509_vfy.h>
-#include <openssl/x509v3.h>
+#include "../crypto/crypto.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/err/err.h"
+#include "../crypto/x509/x509_vfy.h"
+#include "../crypto/x509v3/x509v3.h"
 
 #undef PROG
 #define PROG smime_main

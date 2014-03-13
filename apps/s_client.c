@@ -140,7 +140,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/e_os2.h>
+#include "../e_os2.h"
 #ifdef OPENSSL_NO_STDIO
 #define APPS_WIN16
 #endif
@@ -156,15 +156,15 @@ typedef unsigned int u_int;
 
 #define USE_SOCKETS
 #include "apps.h"
-#include <openssl/x509.h>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
-#include <openssl/pem.h>
-#include <openssl/rand.h>
-#include <openssl/ocsp.h>
-#include <openssl/bn.h>
+#include "../crypto/x509/x509.h"
+#include "../ssl/ssl.h"
+#include "../crypto/err/err.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/ocsp/ocsp.h"
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_SRP
-#include <openssl/srp.h>
+#include "../crypto/srp/srp.h"
 #endif
 #include "s_apps.h"
 #include "timeouts.h"

@@ -60,8 +60,8 @@
  */
 
 #include <windows.h>
-#include <openssl/opensslv.h>
-#include <openssl/rand.h>
+#include "../crypto/opensslv.h"
+#include "../crypto/rand/rand.h"
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 const char *filename;

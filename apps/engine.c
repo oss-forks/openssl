@@ -64,10 +64,10 @@
 #define APPS_WIN16
 #endif
 #include "apps.h"
-#include <openssl/err.h>
+#include "../crypto/err/err.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
-#include <openssl/ssl.h>
+#include "../crypto/engine/engine.h"
+#include "../ssl/ssl.h"
 
 #undef PROG
 #define PROG	engine_main

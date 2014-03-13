@@ -56,17 +56,17 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include "../crypto/opensslconf.h"
 #if !defined(OPENSSL_NO_DES) && !defined(OPENSSL_NO_SHA1)
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/crypto.h>
-#include <openssl/err.h>
-#include <openssl/pem.h>
-#include <openssl/pkcs12.h>
+#include "../crypto/crypto.h"
+#include "../crypto/err/err.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/pkcs12/pkcs12.h"
 
 #define PROG pkcs12_main
 

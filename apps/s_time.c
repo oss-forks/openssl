@@ -72,11 +72,11 @@
 #ifdef OPENSSL_NO_STDIO
 #define APPS_WIN16
 #endif
-#include <openssl/x509.h>
-#include <openssl/ssl.h>
-#include <openssl/pem.h>
+#include "../crypto/x509/x509.h"
+#include "../ssl/ssl.h"
+#include "../crypto/pem/pem.h"
 #include "s_apps.h"
-#include <openssl/err.h>
+#include "../crypto/err/err.h"
 #ifdef WIN32_STUFF
 #include "winmain.h"
 #include "wintext.h"

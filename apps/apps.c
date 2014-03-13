@@ -125,22 +125,22 @@
 #include <ctype.h>
 #include <errno.h>
 #include <assert.h>
-#include <openssl/err.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/pem.h>
-#include <openssl/pkcs12.h>
-#include <openssl/ui.h>
-#include <openssl/safestack.h>
+#include "../crypto/err/err.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/x509v3/x509v3.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/pkcs12/pkcs12.h"
+#include "../crypto/ui/ui.h"
+#include "../crypto/stack/safestack.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_JPAKE
-#include <openssl/jpake.h>
+#include "../crypto/jpake/jpake.h"
 #endif
 
 #define NON_MAIN

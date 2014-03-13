@@ -50,7 +50,7 @@
 #include <string.h>
 
 #include "apps.h"
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 
 
 #undef PROG

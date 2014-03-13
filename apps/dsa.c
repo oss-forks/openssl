@@ -56,20 +56,20 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/opensslconf.h>	/* for OPENSSL_NO_DSA */
+#include "../crypto/opensslconf.h"	/* for OPENSSL_NO_DSA */
 #ifndef OPENSSL_NO_DSA
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/dsa.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/bn.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/dsa/dsa.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/bn/bn.h"
 
 #undef PROG
 #define PROG	dsa_main

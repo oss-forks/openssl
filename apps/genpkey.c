@@ -58,11 +58,11 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/pem.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
+#include "../crypto/pem/pem.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 
 static int init_keygen_file(BIO *err, EVP_PKEY_CTX **pctx,

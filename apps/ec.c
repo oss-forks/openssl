@@ -56,16 +56,16 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include "../crypto/opensslconf.h"
 #ifndef OPENSSL_NO_EC
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/pem.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/pem/pem.h"
 
 #undef PROG
 #define PROG	ec_main

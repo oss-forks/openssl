@@ -70,21 +70,21 @@
 #define APPS_WIN16
 #endif
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/evp.h>
-#include <openssl/conf.h>
-#include <openssl/err.h>
-#include <openssl/asn1.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/objects.h>
-#include <openssl/pem.h>
-#include <openssl/bn.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/conf/conf.h"
+#include "../crypto/err/err.h"
+#include "../crypto/asn1/asn1.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/x509v3/x509v3.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../crypto/dsa/dsa.h"
 #endif
 
 #define SECTION		"req"

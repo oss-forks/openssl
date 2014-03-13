@@ -112,8 +112,8 @@
 #define NON_MAIN
 #include "apps.h"
 #undef NON_MAIN
-#include <openssl/bio.h>
-#include <openssl/rand.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/rand/rand.h"
 
 
 static int seeded = 0;

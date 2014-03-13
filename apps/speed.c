@@ -95,11 +95,11 @@
 #ifdef OPENSSL_NO_STDIO
 #define APPS_WIN16
 #endif
-#include <openssl/crypto.h>
-#include <openssl/rand.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
+#include "../crypto/crypto.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/objects/objects.h"
 #if !defined(OPENSSL_SYS_MSDOS)
 #include OPENSSL_UNISTD
 #endif
@@ -118,78 +118,78 @@
 # endif
 #endif
 
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_DES
-#include <openssl/des.h>
+#include "../crypto/des/des.h"
 #endif
 #ifndef OPENSSL_NO_AES
-#include <openssl/aes.h>
+#include "../crypto/aes/aes.h"
 #endif
 #ifndef OPENSSL_NO_CAMELLIA
-#include <openssl/camellia.h>
+#include "../crypto/camellia/camellia.h"
 #endif
 #ifndef OPENSSL_NO_MD2
-#include <openssl/md2.h>
+#include "../crypto/md2/md2.h"
 #endif
 #ifndef OPENSSL_NO_MDC2
-#include <openssl/mdc2.h>
+#include "../crypto/mdc2/mdc2.h"
 #endif
 #ifndef OPENSSL_NO_MD4
-#include <openssl/md4.h>
+#include "../crypto/md4/md4.h"
 #endif
 #ifndef OPENSSL_NO_MD5
-#include <openssl/md5.h>
+#include "../crypto/md5/md5.h"
 #endif
 #ifndef OPENSSL_NO_HMAC
-#include <openssl/hmac.h>
+#include "../crypto/hmac/hmac.h"
 #endif
-#include <openssl/evp.h>
+#include "../crypto/evp/evp.h"
 #ifndef OPENSSL_NO_SHA
-#include <openssl/sha.h>
+#include "../crypto/sha/sha.h"
 #endif
 #ifndef OPENSSL_NO_RIPEMD
-#include <openssl/ripemd.h>
+#include "../crypto/ripemd/ripemd.h"
 #endif
 #ifndef OPENSSL_NO_WHIRLPOOL
-#include <openssl/whrlpool.h>
+#include "../crypto/whrlpool/whrlpool.h"
 #endif
 #ifndef OPENSSL_NO_RC4
-#include <openssl/rc4.h>
+#include "../crypto/rc4/rc4.h"
 #endif
 #ifndef OPENSSL_NO_RC5
-#include <openssl/rc5.h>
+#include "../crypto/rc5/rc5.h"
 #endif
 #ifndef OPENSSL_NO_RC2
-#include <openssl/rc2.h>
+#include "../crypto/rc2/rc2.h"
 #endif
 #ifndef OPENSSL_NO_IDEA
-#include <openssl/idea.h>
+#include "../crypto/idea/idea.h"
 #endif
 #ifndef OPENSSL_NO_SEED
-#include <openssl/seed.h>
+#include "../crypto/seed/seed.h"
 #endif
 #ifndef OPENSSL_NO_BF
-#include <openssl/blowfish.h>
+#include "../crypto/bf/blowfish.h"
 #endif
 #ifndef OPENSSL_NO_CAST
-#include <openssl/cast.h>
+#include "../crypto/cast/cast.h"
 #endif
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #include "./testrsa.h"
 #endif
-#include <openssl/x509.h>
+#include "../crypto/x509/x509.h"
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../crypto/dsa/dsa.h"
 #include "./testdsa.h"
 #endif
 #ifndef OPENSSL_NO_ECDSA
-#include <openssl/ecdsa.h>
+#include "../crypto/ecdsa/ecdsa.h"
 #endif
 #ifndef OPENSSL_NO_ECDH
-#include <openssl/ecdh.h>
+#include "../crypto/ecdh/ecdh.h"
 #endif
-#include <openssl/modes.h>
+#include "../crypto/modes/modes.h"
 
 #ifdef OPENSSL_FIPS
 #ifdef OPENSSL_DOING_MAKEDEPEND

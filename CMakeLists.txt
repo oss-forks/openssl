@@ -21,7 +21,7 @@ FILE(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/_include_/cmake_generated")
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_BINARY_DIR}/_include_")
 CONFIGURE_FILE(buildinf.h.cmake "${CMAKE_CURRENT_BINARY_DIR}/_include_/cmake_generated/buildinf.h")
 
-ADD_LIBRARY(crypto STATIC
+ADD_LIBRARY(crypto STATIC EXCLUDE_FROM_ALL
 	crypto/aes/aes.h
 	crypto/aes/aes_cbc.c
 	crypto/aes/aes_cfb.c
@@ -115,7 +115,6 @@ ADD_LIBRARY(crypto STATIC
 	crypto/asn1/x_val.c
 	crypto/asn1/x_x509.c
 	crypto/asn1/x_x509a.c
-	crypto/bf/bf_cbc.c
 	crypto/bf/bf_cfb64.c
 	crypto/bf/bf_ecb.c
 	crypto/bf/bf_enc.c
@@ -450,6 +449,7 @@ ADD_LIBRARY(crypto STATIC
 	crypto/jpake/jpake_err.c
 	crypto/krb5/krb5_asn.c
 	crypto/krb5/krb5_asn.h
+	crypto/lhash/lh_stats.c
 	crypto/lhash/lhash.c
 	crypto/lhash/lhash.h
 	crypto/md2/md2.h
@@ -824,7 +824,7 @@ IF(ZLIB_FOUND)
 	TARGET_LINK_LIBRARIES(crypto ${ZLIB_LIBRARIES})
 ENDIF()
 
-ADD_LIBRARY(ssl
+ADD_LIBRARY(ssl STATIC EXCLUDE_FROM_ALL
 	ssl/bio_ssl.c
 	ssl/d1_both.c
 	ssl/d1_clnt.c
@@ -835,7 +835,6 @@ ADD_LIBRARY(ssl
 	ssl/d1_srtp.c
 	ssl/d1_srvr.c
 	ssl/dtls1.h
-	ssl/kssl.c
 	ssl/kssl.h
 	ssl/kssl_lcl.h
 	ssl/s23_clnt.c
@@ -885,3 +884,67 @@ ADD_LIBRARY(ssl
 )
 
 TARGET_LINK_LIBRARIES(ssl crypto)
+
+ADD_DEFINITIONS(-DMONOLITH)
+
+ADD_EXECUTABLE(openssl EXCLUDE_FROM_ALL
+	apps/app_rand.c
+	apps/apps.c
+	apps/apps.h
+	apps/asn1pars.c
+	apps/ca.c
+	apps/ciphers.c
+	apps/cms.c
+	apps/crl.c
+	apps/crl2p7.c
+	apps/dgst.c
+	apps/dh.c
+	apps/dhparam.c
+	apps/dsa.c
+	apps/dsaparam.c
+	apps/ec.c
+	apps/ecparam.c
+	apps/enc.c
+	apps/engine.c
+	apps/errstr.c
+	apps/gendh.c
+	apps/gendsa.c
+	apps/genpkey.c
+	apps/genrsa.c
+	apps/nseq.c
+	apps/ocsp.c
+	apps/openssl.c
+	apps/passwd.c
+	apps/pkcs12.c
+	apps/pkcs7.c
+	apps/pkcs8.c
+	apps/pkey.c
+	apps/pkeyparam.c
+	apps/pkeyutl.c
+	apps/prime.c
+	apps/progs.h
+	apps/rand.c
+	apps/req.c
+	apps/rsa.c
+	apps/rsautl.c
+	apps/s_apps.h
+	apps/s_cb.c
+	apps/s_client.c
+	apps/s_server.c
+	apps/s_socket.c
+	apps/s_time.c
+	apps/sess_id.c
+	apps/smime.c
+	apps/speed.c
+	apps/spkac.c
+	apps/srp.c
+	apps/testdsa.h
+	apps/testrsa.h
+	apps/timeouts.h
+	apps/ts.c
+	apps/verify.c
+	apps/version.c
+	apps/x509.c
+)
+
+TARGET_LINK_LIBRARIES(openssl ssl crypto)

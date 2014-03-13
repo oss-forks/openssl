@@ -60,14 +60,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/rand.h>
-#include <openssl/pem.h>
-#include <openssl/comp.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/comp/comp.h"
 #include <ctype.h>
 
 int set_hex(char *in,unsigned char *out,int size);

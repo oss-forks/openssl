@@ -83,7 +83,7 @@ typedef unsigned int u_int;
 #undef USE_SOCKETS
 #undef NON_MAIN
 #include "s_apps.h"
-#include <openssl/ssl.h>
+#include "../ssl/ssl.h"
 
 #ifdef FLAT_INC
 #include "e_os.h"

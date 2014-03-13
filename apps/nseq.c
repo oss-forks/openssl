@@ -59,8 +59,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/pem.h>
-#include <openssl/err.h>
+#include "../crypto/pem/pem.h"
+#include "../crypto/err/err.h"
 
 #undef PROG
 #define PROG nseq_main

@@ -11,15 +11,15 @@
 
 #include "apps.h"
 
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/rand.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/rand/rand.h"
 #ifndef OPENSSL_NO_DES
-# include <openssl/des.h>
+# include "../crypto/des/des.h"
 #endif
 #ifndef NO_MD5CRYPT_1
-# include <openssl/md5.h>
+# include "../crypto/md5/md5.h"
 #endif
 
 

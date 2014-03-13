@@ -62,13 +62,13 @@
 #include <string.h>
 #include <time.h>
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/conf.h>
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/lhash.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/conf/conf.h"
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/lhash/lhash.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
 
 #undef PROG
 #define PROG	spkac_main

@@ -59,9 +59,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/rand.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/rand/rand.h"
 
 #undef PROG
 #define PROG rand_main

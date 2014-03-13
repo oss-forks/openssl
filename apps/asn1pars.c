@@ -64,10 +64,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include "apps.h"
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
 
 /* -inform arg	- input format - default PEM (DER or PEM)
  * -in arg	- input file - default stdin

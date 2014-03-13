@@ -55,18 +55,18 @@
  * Hudson (tjh@cryptsoft.com).
  *
  */
-#include <openssl/opensslconf.h>
+#include "../crypto/opensslconf.h"
 
 #ifndef OPENSSL_NO_SRP
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/conf.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
-#include <openssl/txt_db.h>
-#include <openssl/buffer.h>
-#include <openssl/srp.h>
+#include "../crypto/conf/conf.h"
+#include "../crypto/bio/bio.h"
+#include "../crypto/err/err.h"
+#include "../crypto/txt_db/txt_db.h"
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/srp/srp.h"
 
 #include "apps.h"
 

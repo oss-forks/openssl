@@ -61,12 +61,12 @@
 #include <string.h>
 #include <time.h>
 #include "apps.h"
-#include <openssl/err.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/pkcs7.h>
-#include <openssl/pem.h>
+#include "../crypto/err/err.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pkcs7/pkcs7.h"
+#include "../crypto/pem/pem.h"
 
 #undef PROG
 #define PROG	pkcs7_main

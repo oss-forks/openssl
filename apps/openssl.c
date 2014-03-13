@@ -115,21 +115,21 @@
 #include <stdlib.h>
 #define OPENSSL_C /* tells apps.h to use complete apps_startup() */
 #include "apps.h"
-#include <openssl/bio.h>
-#include <openssl/crypto.h>
-#include <openssl/rand.h>
-#include <openssl/lhash.h>
-#include <openssl/conf.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/ssl.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/crypto.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/lhash/lhash.h"
+#include "../crypto/conf/conf.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pem/pem.h"
+#include "../ssl/ssl.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 #define USE_SOCKETS /* needed for the _O_BINARY defs in the MS world */
 #include "progs.h"
 #include "s_apps.h"
-#include <openssl/err.h>
+#include "../crypto/err/err.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif

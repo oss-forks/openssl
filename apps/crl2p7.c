@@ -64,12 +64,12 @@
 #include <string.h>
 #include <sys/types.h>
 #include "apps.h"
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/pkcs7.h>
-#include <openssl/pem.h>
-#include <openssl/objects.h>
+#include "../crypto/err/err.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/pkcs7/pkcs7.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/objects/objects.h"
 
 static int add_certs_from_file(STACK_OF(X509) *stack, char *certfile);
 #undef PROG
