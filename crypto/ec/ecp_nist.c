@@ -63,8 +63,8 @@
 
 #include <limits.h>
 
-#include <openssl/err.h>
-#include <openssl/obj_mac.h>
+#include "../err/err.h"
+#include "../objects/obj_mac.h"
 #include "ec_lcl.h"
 
 #ifdef OPENSSL_FIPS

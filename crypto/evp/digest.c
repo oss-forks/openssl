@@ -110,11 +110,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/objects.h>
-#include <openssl/evp.h>
+#include "../cryptlib.h"
+#include "../objects/objects.h"
+#include "../evp/evp.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS

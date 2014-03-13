@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #ifndef OPENSSL_NO_BF
-#include <openssl/evp.h>
+#include "evp.h"
 #include "evp_locl.h"
-#include <openssl/objects.h>
-#include <openssl/blowfish.h>
+#include "../objects/objects.h"
+#include "../bf/blowfish.h"
 
 static int bf_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,
 		       const unsigned char *iv, int enc);

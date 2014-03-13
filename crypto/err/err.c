@@ -112,12 +112,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
-#include "cryptlib.h"
-#include <openssl/lhash.h>
-#include <openssl/crypto.h>
-#include <openssl/buffer.h>
-#include <openssl/bio.h>
-#include <openssl/err.h>
+#include "../cryptlib.h"
+#include "../lhash/lhash.h"
+#include "../crypto.h"
+#include "../buffer/buffer.h"
+#include "../bio/bio.h"
+#include "err.h"
 
 DECLARE_LHASH_OF(ERR_STRING_DATA);
 DECLARE_LHASH_OF(ERR_STATE);

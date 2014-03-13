@@ -55,16 +55,16 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <openssl/crypto.h>
-#include <openssl/dso.h>
-#include <openssl/x509.h>
-#include <openssl/objects.h>
-#include <openssl/engine.h>
-#include <openssl/rand.h>
+#include "../crypto/crypto.h"
+#include "../crypto/dso/dso.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/engine/engine.h"
+#include "../crypto/rand/rand.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 
 #ifndef OPENSSL_NO_HW
 #ifndef OPENSSL_NO_HW_4758_CCA

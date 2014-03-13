@@ -58,9 +58,9 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/objects.h>
+#include "../cryptlib.h"
+#include "asn1.h"
+#include "../objects/objects.h"
 
 
 static STACK_OF(ASN1_STRING_TABLE) *stable = NULL;

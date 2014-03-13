@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include "asn1_locl.h"
+#include "../cryptlib.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
+#include "../asn1/asn1_locl.h"
 
 long PKCS7_ctrl(PKCS7 *p7, int cmd, long larg, char *parg)
 	{

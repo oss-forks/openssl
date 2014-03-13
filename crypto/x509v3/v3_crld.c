@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/conf.h>
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../conf/conf.h"
+#include "../asn1/asn1.h"
+#include "../asn1/asn1t.h"
+#include "x509v3.h"
 
 static void *v2i_crld(const X509V3_EXT_METHOD *method,
 		      X509V3_CTX *ctx, STACK_OF(CONF_VALUE) *nval);

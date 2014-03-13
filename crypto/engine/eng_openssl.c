@@ -63,21 +63,21 @@
 
 
 #include <stdio.h>
-#include <openssl/crypto.h>
-#include "cryptlib.h"
-#include <openssl/engine.h>
-#include <openssl/dso.h>
-#include <openssl/pem.h>
-#include <openssl/evp.h>
-#include <openssl/rand.h>
+#include "../crypto.h"
+#include "../cryptlib.h"
+#include "engine.h"
+#include "../dso/dso.h"
+#include "../pem/pem.h"
+#include "../evp/evp.h"
+#include "../rand/rand.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../dh/dh.h"
 #endif
 
 /* This testing gunk is implemented (and explained) lower down. It also assumes
@@ -217,7 +217,7 @@ IMPLEMENT_DYNAMIC_BIND_FN(bind_fn)
  *        the "init_key" handler is called.
  *    TEST_ENG_OPENSSL_RC4_P_CIPHER - ditto for the "cipher" handler.
  */
-#include <openssl/rc4.h>
+#include "../rc4/rc4.h"
 #define TEST_RC4_KEY_SIZE		16
 static int test_cipher_nids[] = {NID_rc4,NID_rc4_40};
 static int test_cipher_nids_number = 2;
@@ -303,7 +303,7 @@ static int openssl_ciphers(ENGINE *e, const EVP_CIPHER **cipher,
 
 #ifdef TEST_ENG_OPENSSL_SHA
 /* Much the same sort of comment as for TEST_ENG_OPENSSL_RC4 */
-#include <openssl/sha.h>
+#include "../sha/sha.h"
 static int test_digest_nids[] = {NID_sha1};
 static int test_digest_nids_number = 1;
 static int test_sha1_init(EVP_MD_CTX *ctx)

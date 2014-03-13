@@ -58,8 +58,8 @@
 
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "x509v3.h"
 
 static ASN1_OCTET_STRING *s2i_skey_id(X509V3_EXT_METHOD *method, X509V3_CTX *ctx, char *str);
 const X509V3_EXT_METHOD v3_skey_id = { 

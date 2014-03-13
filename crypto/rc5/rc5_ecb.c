@@ -56,9 +56,9 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/rc5.h>
+#include "rc5.h"
 #include "rc5_locl.h"
-#include <openssl/opensslv.h>
+#include "../opensslv.h"
 
 const char RC5_version[]="RC5" OPENSSL_VERSION_PTEXT;
 

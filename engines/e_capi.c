@@ -54,14 +54,14 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <openssl/crypto.h>
-#include <openssl/buffer.h>
-#include <openssl/bn.h>
+#include "../crypto/crypto.h"
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/bn/bn.h"
 
 #ifdef OPENSSL_SYS_WIN32
 #ifndef OPENSSL_NO_CAPIENG
 
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 
 #include <windows.h>
 
@@ -109,9 +109,9 @@
 #define CERT_SYSTEM_STORE_CURRENT_USER			0x00010000
 #endif 
 
-#include <openssl/engine.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
+#include "../crypto/engine.h>
+#include "../crypto/pem.h>
+#include "../crypto/x509v3.h>
 
 #include "e_capi_err.h"
 #include "e_capi_err.c"
@@ -1829,7 +1829,7 @@ static int cert_select_dialog(ENGINE *e, SSL *ssl, STACK_OF(X509) *certs)
 #endif
 
 #else /* !__COMPILE_CAPIENG */
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #ifndef OPENSSL_NO_DYNAMIC_ENGINE
 OPENSSL_EXPORT
 int bind_engine(ENGINE *e, const char *id, const dynamic_fns *fns);

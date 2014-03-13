@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include <openssl/cast.h>
+#include "cast.h"
 #include "cast_lcl.h"
 
 /* The input and output encrypted as though 64bit ofb mode is being

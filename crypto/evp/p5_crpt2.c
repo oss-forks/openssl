@@ -57,11 +57,11 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #if !defined(OPENSSL_NO_HMAC) && !defined(OPENSSL_NO_SHA)
-#include <openssl/x509.h>
-#include <openssl/evp.h>
-#include <openssl/hmac.h>
+#include "../x509/x509.h"
+#include "evp.h"
+#include "../hmac/hmac.h"
 #include "evp_locl.h"
 
 /* set this to print out info about the keygen algorithm */

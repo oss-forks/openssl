@@ -59,12 +59,12 @@
 /* Original version from Steven Schoch <schoch@sheba.arc.nasa.gov> */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/sha.h>
-#include <openssl/dsa.h>
-#include <openssl/rand.h>
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "../sha/sha.h"
+#include "dsa.h"
+#include "../rand/rand.h"
+#include "../asn1/asn1.h"
 
 static DSA_SIG *dsa_do_sign(const unsigned char *dgst, int dlen, DSA *dsa);
 static int dsa_sign_setup(DSA *dsa, BN_CTX *ctx_in, BIGNUM **kinvp, BIGNUM **rp);

@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/dh.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "dh.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS

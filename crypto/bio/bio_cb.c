@@ -59,9 +59,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "cryptlib.h"
-#include <openssl/bio.h>
-#include <openssl/err.h>
+#include "../cryptlib.h"
+#include "bio.h"
+#include "../err/err.h"
 
 long MS_CALLBACK BIO_debug_callback(BIO *bio, int cmd, const char *argp,
 	     int argi, long argl, long ret)

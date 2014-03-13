@@ -56,9 +56,9 @@
  *
  */
 
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "asn1.h"
+#include "../x509v3/x509v3.h"
 
 #define ASN1_GEN_FLAG		0x10000
 #define ASN1_GEN_FLAG_IMP	(ASN1_GEN_FLAG|1)

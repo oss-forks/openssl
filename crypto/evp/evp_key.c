@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/ui.h>
+#include "../cryptlib.h"
+#include "../x509/x509.h"
+#include "../objects/objects.h"
+#include "evp.h"
+#include "../ui/ui.h"
 
 /* should be init to zeros. */
 static char prompt_string[80];

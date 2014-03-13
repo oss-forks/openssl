@@ -7,8 +7,8 @@
  *          Requires OpenSSL 0.9.9 for compilation                    *
  **********************************************************************/
 #include <stdio.h>
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../../crypto/asn1/asn1t.h"
+#include "../../crypto/x509/x509.h"
 #include "gost_lcl.h"
 
 ASN1_NDEF_SEQUENCE(GOST_KEY_TRANSPORT) = {

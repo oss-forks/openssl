@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../x509/x509.h"
 
 ASN1_SEQUENCE(X509_SIG) = {
 	ASN1_SIMPLE(X509_SIG, algor, X509_ALGOR),

@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/evp.h>
-#include <openssl/rand.h>
-#include <openssl/sha.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "rsa.h"
+#include "../evp/evp.h"
+#include "../rand/rand.h"
+#include "../sha/sha.h"
 
 static const unsigned char zeroes[] = {0,0,0,0,0,0,0,0};
 

@@ -109,8 +109,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "rand.h"
 #include "rand_lcl.h"
 
 #if defined(OPENSSL_SYS_WINDOWS) || defined(OPENSSL_SYS_WIN32)
@@ -804,4 +804,6 @@ static void readscreen(void)
 #endif /* !OPENSSL_SYS_WINCE */
 }
 
+#else
+void * openssl_rand_win_dummy = &openssl_rand_win_dummy;
 #endif

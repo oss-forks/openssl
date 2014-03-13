@@ -57,16 +57,16 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "../x509/x509.h"
+#include "asn1.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
-#include <openssl/bn.h>
+#include "../bn/bn.h"
 
 /* Print out an SPKI */
 

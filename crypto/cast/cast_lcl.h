@@ -57,7 +57,7 @@
  */
 
 
-#include "e_os.h"
+#include "../../e_os.h"
 
 #ifdef OPENSSL_SYS_WIN32
 #include <stdlib.h>

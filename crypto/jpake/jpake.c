@@ -1,8 +1,8 @@
 #include "jpake.h"
 
-#include <openssl/crypto.h>
-#include <openssl/sha.h>
-#include <openssl/err.h>
+#include "../crypto.h"
+#include "../sha/sha.h"
+#include "../err/err.h"
 #include <memory.h>
 
 /*

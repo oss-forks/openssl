@@ -58,11 +58,11 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "rand.h"
 
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS

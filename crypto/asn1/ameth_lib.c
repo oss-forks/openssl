@@ -56,11 +56,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../x509/x509.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 #include "asn1_locl.h"
 

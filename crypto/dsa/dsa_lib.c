@@ -59,15 +59,15 @@
 /* Original version from Steven Schoch <schoch@sheba.arc.nasa.gov> */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/dsa.h>
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "dsa.h"
+#include "../asn1/asn1.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../dh/dh.h"
 #endif
 
 #ifdef OPENSSL_FIPS

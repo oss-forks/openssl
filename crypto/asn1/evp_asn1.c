@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/asn1_mac.h>
+#include "../cryptlib.h"
+#include "asn1.h"
+#include "asn1_mac.h"
 
 int ASN1_TYPE_set_octetstring(ASN1_TYPE *a, unsigned char *data, int len)
 	{

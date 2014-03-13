@@ -61,9 +61,9 @@
   */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/asn1t.h>
+#include "../cryptlib.h"
+#include "../x509/x509.h"
+#include "asn1t.h"
 
 ASN1_SEQUENCE(NETSCAPE_SPKAC) = {
 	ASN1_SIMPLE(NETSCAPE_SPKAC, pubkey, X509_PUBKEY),

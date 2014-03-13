@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "../rsa/rsa.h"
+#include "../rand/rand.h"
 
 int RSA_padding_add_SSLv23(unsigned char *to, int tlen,
 	const unsigned char *from, int flen)

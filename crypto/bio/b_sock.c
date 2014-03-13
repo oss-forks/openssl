@@ -60,8 +60,8 @@
 #include <stdlib.h>
 #include <errno.h>
 #define USE_SOCKETS
-#include "cryptlib.h"
-#include <openssl/bio.h>
+#include "../cryptlib.h"
+#include "bio.h"
 #if defined(OPENSSL_SYS_NETWARE) && defined(NETWARE_BSDSOCK)
 #include <netdb.h>
 #if defined(NETWARE_CLIB)
@@ -72,7 +72,7 @@ NETDB_DEFINE_CONTEXT
 
 #ifndef OPENSSL_NO_SOCK
 
-#include <openssl/dso.h>
+#include "../dso/dso.h"
 
 #define SOCKET_PROTOCOL IPPROTO_TCP
 

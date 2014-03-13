@@ -49,7 +49,7 @@
 
 #define OPENSSL_FIPSAPI
 
-#include <openssl/crypto.h>
+#include "../crypto.h"
 #include "modes_lcl.h"
 #include <string.h>
 
@@ -1468,7 +1468,7 @@ void CRYPTO_gcm128_release(GCM128_CONTEXT *ctx)
 
 #if defined(SELFTEST)
 #include <stdio.h>
-#include <openssl/aes.h>
+#include "../aes/aes.h"
 
 /* Test Case 1 */
 static const u8	K1[16],

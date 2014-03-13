@@ -59,8 +59,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
-#include "cryptlib.h"
-#include <openssl/dso.h>
+#include "../cryptlib.h"
+#include "dso.h"
 #ifdef OPENSSL_SYS_VMS
 #pragma message disable DOLLARID
 #include <rms.h>

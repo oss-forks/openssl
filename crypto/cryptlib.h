@@ -62,18 +62,18 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "e_os.h"
+#include "../e_os.h"
 
 #ifdef OPENSSL_USE_APPLINK
 #define BIO_FLAGS_UPLINK 0x8000
 #include "ms/uplink.h"
 #endif
 
-#include <openssl/crypto.h>
-#include <openssl/buffer.h> 
-#include <openssl/bio.h> 
-#include <openssl/err.h>
-#include <openssl/opensslconf.h>
+#include "crypto.h"
+#include "buffer/buffer.h"
+#include "bio/bio.h"
+#include "err/err.h"
+#include "opensslconf.h"
 
 #ifdef  __cplusplus
 extern "C" {

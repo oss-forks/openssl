@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/rsa.h>
-#include <openssl/evp.h>
+#include "../cryptlib.h"
+#include "rsa.h"
+#include "../evp/evp.h"
 
 #ifndef OPENSSL_NO_FP_API
 int RSA_print_fp(FILE *fp, const RSA *x, int off)

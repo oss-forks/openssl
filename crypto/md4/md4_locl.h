@@ -58,8 +58,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/opensslconf.h>
-#include <openssl/md4.h>
+#include "../opensslconf.h"
+#include "md4.h"
 
 #ifndef MD4_LONG_LOG2
 #define MD4_LONG_LOG2 2 /* default to 32 bits */
@@ -84,7 +84,7 @@ void md4_block_data_order (MD4_CTX *c, const void *p,size_t num);
 	} while (0)
 #define	HASH_BLOCK_DATA_ORDER	md4_block_data_order
 
-#include "md32_common.h"
+#include "../md32_common.h"
 
 /*
 #define	F(x,y,z)	(((x) & (y))  |  ((~(x)) & (z)))

@@ -58,10 +58,10 @@
 
 /* Original version from Steven Schoch <schoch@sheba.arc.nasa.gov> */
 
-#include "cryptlib.h"
-#include <openssl/dsa.h>
-#include <openssl/rand.h>
-#include <openssl/bn.h>
+#include "../cryptlib.h"
+#include "dsa.h"
+#include "../rand/rand.h"
+#include "../bn/bn.h"
 
 DSA_SIG * DSA_do_sign(const unsigned char *dgst, int dlen, DSA *dsa)
 	{

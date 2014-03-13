@@ -51,12 +51,12 @@
  * ====================================================================
  */
 
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/err.h>
-#include <openssl/pem.h>
-#include <openssl/bio.h>
-#include <openssl/asn1.h>
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "../err/err.h"
+#include "../pem/pem.h"
+#include "../bio/bio.h"
+#include "../asn1/asn1.h"
 #include "cms.h"
 #include "cms_lcl.h"
 

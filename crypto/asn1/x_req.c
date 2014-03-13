@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../x509/x509.h"
 
 /* X509_REQ_INFO is handled in an unusual way to get round
  * invalid encodings. Some broken certificate requests don't

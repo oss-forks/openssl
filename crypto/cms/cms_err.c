@@ -59,8 +59,8 @@
  */
 
 #include <stdio.h>
-#include <openssl/err.h>
-#include <openssl/cms.h>
+#include "../err/err.h"
+#include "../cms/cms.h"
 
 /* BEGIN ERROR CODES */
 #ifndef OPENSSL_NO_ERR

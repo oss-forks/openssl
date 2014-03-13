@@ -51,18 +51,19 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
-#include <openssl/err.h>
-#include <openssl/cms.h>
-#include <openssl/bio.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../pem/pem.h"
+#include "../x509v3/x509v3.h"
+#include "../err/err.h"
+#include "../cms/cms.h"
+#include "../bio/bio.h"
 #ifndef OPENSSL_NO_COMP
-#include <openssl/comp.h>
+#include "../comp/comp.h"
 #endif
 #include "cms_lcl.h"
 
+void * openssl_cms_cd_dummy = &openssl_cms_cd_dummy;
 DECLARE_ASN1_ITEM(CMS_CompressedData)
 
 #ifdef ZLIB

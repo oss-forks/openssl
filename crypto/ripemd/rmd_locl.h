@@ -58,8 +58,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/opensslconf.h>
-#include <openssl/ripemd.h>
+#include "../opensslconf.h"
+#include "ripemd.h"
 
 #ifndef RIPEMD160_LONG_LOG2
 #define RIPEMD160_LONG_LOG2 2 /* default to 32 bits */
@@ -96,7 +96,7 @@ void ripemd160_block_data_order (RIPEMD160_CTX *c, const void *p,size_t num);
 	} while (0)
 #define HASH_BLOCK_DATA_ORDER   ripemd160_block_data_order
 
-#include "md32_common.h"
+#include "../md32_common.h"
 
 #if 0
 #define F1(x,y,z)	 ((x)^(y)^(z))

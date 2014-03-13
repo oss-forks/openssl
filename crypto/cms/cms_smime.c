@@ -51,12 +51,12 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/err.h>
-#include <openssl/cms.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "../x509v3/x509v3.h"
+#include "../err/err.h"
+#include "../cms/cms.h"
 #include "cms_lcl.h"
 
 static int cms_copy_content(BIO *out, BIO *in, unsigned int flags)

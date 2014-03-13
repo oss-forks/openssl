@@ -58,9 +58,9 @@
 
 #include <stdio.h>
 #include <errno.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/evp.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "../evp/evp.h"
 
 static int ber_write(BIO *h,char *buf,int num);
 static int ber_read(BIO *h,char *buf,int size);

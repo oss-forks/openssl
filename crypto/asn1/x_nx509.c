@@ -57,9 +57,9 @@
  */
 
 #include <stddef.h>
-#include <openssl/x509.h>
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
+#include "../x509/x509.h"
+#include "asn1.h"
+#include "asn1t.h"
 
 /* Old netscape certificate wrapper format */
 

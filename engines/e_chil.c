@@ -59,19 +59,19 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <openssl/crypto.h>
-#include <openssl/pem.h>
-#include <openssl/dso.h>
-#include <openssl/engine.h>
-#include <openssl/ui.h>
-#include <openssl/rand.h>
+#include "../crypto/crypto.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/dso/dso.h"
+#include "../crypto/engine/engine.h"
+#include "../crypto/ui/ui.h"
+#include "../crypto/rand/rand.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 
 #ifndef OPENSSL_NO_HW
 #ifndef OPENSSL_NO_HW_CHIL

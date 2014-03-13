@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
 #include "bn_lcl.h"
 
 static const char Hex[]="0123456789ABCDEF";

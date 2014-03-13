@@ -9,10 +9,10 @@
  *          Requires OpenSSL 0.9.9 for compilation                    *
  **********************************************************************/
 #include <string.h>
-#include <openssl/dh.h>
-#include <openssl/rand.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
+#include "../../crypto/dh/dh.h"
+#include "../../crypto/rand/rand.h"
+#include "../../crypto/evp/evp.h"
+#include "../../crypto/objects/objects.h"
 
 #include "gost89.h"
 #include "gosthash.h"

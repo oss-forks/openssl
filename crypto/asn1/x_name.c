@@ -58,9 +58,9 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../x509/x509.h"
 #include "asn1_locl.h"
 
 typedef STACK_OF(X509_NAME_ENTRY) STACK_OF_X509_NAME_ENTRY;

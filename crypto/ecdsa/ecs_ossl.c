@@ -57,9 +57,9 @@
  */
 
 #include "ecs_locl.h"
-#include <openssl/err.h>
-#include <openssl/obj_mac.h>
-#include <openssl/bn.h>
+#include "../err/err.h"
+#include "../objects/obj_mac.h"
+#include "../bn/bn.h"
 
 static ECDSA_SIG *ecdsa_do_sign(const unsigned char *dgst, int dlen, 
 		const BIGNUM *, const BIGNUM *, EC_KEY *eckey);

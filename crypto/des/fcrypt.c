@@ -6,7 +6,7 @@
 #endif
 #endif
 #ifdef CHARSET_EBCDIC
-#include <openssl/ebcdic.h>
+#include "../ebcdic.h"
 #endif
 
 /* This version of crypt has been developed from my MIT compatible

@@ -57,15 +57,15 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/rsa.h>
-#include <openssl/bn.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "rsa.h"
+#include "../bn/bn.h"
 #ifndef OPENSSL_NO_CMS
-#include <openssl/cms.h>
+#include "../cms/cms.h"
 #endif
-#include "asn1_locl.h"
+#include "../asn1/asn1_locl.h"
 
 static int rsa_pub_encode(X509_PUBKEY *pk, const EVP_PKEY *pkey)
 	{

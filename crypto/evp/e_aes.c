@@ -48,17 +48,17 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include "../opensslconf.h"
 #ifndef OPENSSL_NO_AES
-#include <openssl/evp.h>
-#include <openssl/err.h>
+#include "evp.h"
+#include "../err/err.h"
 #include <string.h>
 #include <assert.h>
-#include <openssl/aes.h>
+#include "../aes/aes.h"
 #include "evp_locl.h"
 #ifndef OPENSSL_FIPS
-#include "modes_lcl.h"
-#include <openssl/rand.h>
+#include "../modes/modes_lcl.h"
+#include "../rand/rand.h"
 
 typedef struct
 	{

@@ -57,14 +57,14 @@
  */
 
 #include <stdio.h>
-#include <openssl/crypto.h>
-#include "cryptlib.h"
-#include <openssl/lhash.h>
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/rand.h>
+#include "../crypto.h"
+#include "../cryptlib.h"
+#include "../lhash/lhash.h"
+#include "../bn/bn.h"
+#include "rsa.h"
+#include "../rand/rand.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 #ifdef OPENSSL_FIPS

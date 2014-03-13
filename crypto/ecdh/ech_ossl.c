@@ -71,13 +71,13 @@
 #include <string.h>
 #include <limits.h>
 
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #include "ech_locl.h"
-#include <openssl/err.h>
-#include <openssl/sha.h>
-#include <openssl/obj_mac.h>
-#include <openssl/bn.h>
+#include "../err/err.h"
+#include "../sha/sha.h"
+#include "../objects/obj_mac.h"
+#include "../bn/bn.h"
 
 static int ecdh_compute_key(void *out, size_t len, const EC_POINT *pub_key,
 	EC_KEY *ecdh, 

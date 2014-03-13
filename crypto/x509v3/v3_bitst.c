@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/conf.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../conf/conf.h"
+#include "x509v3.h"
 
 static BIT_STRING_BITNAME ns_cert_type_table[] = {
 {0, "SSL Client", "client"},

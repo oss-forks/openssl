@@ -70,9 +70,9 @@
 #include "ech_locl.h"
 #include <string.h>
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
-#include <openssl/err.h>
+#include "../err/err.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif

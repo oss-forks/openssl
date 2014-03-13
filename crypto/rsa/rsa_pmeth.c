@@ -57,19 +57,19 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/rsa.h>
-#include <openssl/bn.h>
-#include <openssl/evp.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "rsa.h"
+#include "../bn/bn.h"
+#include "../evp/evp.h"
 #ifndef OPENSSL_NO_CMS
-#include <openssl/cms.h>
+#include "../cms/cms.h"
 #endif
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif
-#include "evp_locl.h"
+#include "../evp/evp_locl.h"
 #include "rsa_locl.h"
 
 /* RSA pkey context structure */

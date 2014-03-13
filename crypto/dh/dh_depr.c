@@ -57,9 +57,9 @@
 /* This file contains deprecated functions as wrappers to the new ones */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/dh.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "dh.h"
 
 static void *dummy=&dummy;
 

@@ -7,10 +7,10 @@
  *       for OpenSSL                                                  *
  *          Requires OpenSSL 0.9.9 for compilation                    *
  **********************************************************************/
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/ec.h>
-#include <openssl/x509v3.h> /*For string_to_hex */
+#include "../../crypto/evp/evp.h"
+#include "../../crypto/objects/objects.h"
+#include "../../crypto/ec/ec.h"
+#include "../../crypto/x509v3/x509v3.h" /*For string_to_hex */
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>

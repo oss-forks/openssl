@@ -59,16 +59,16 @@
 #include <stdio.h>
 #include <time.h>
 
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>
 #endif
 
-#include <openssl/err.h>
-#include <openssl/evp.h>
-#include <openssl/buffer.h>
-#include <openssl/x509.h>
+#include "../err/err.h"
+#include "../evp/evp.h"
+#include "../buffer/buffer.h"
+#include "../x509/x509.h"
 
 #ifndef NO_ASN1_OLD
 

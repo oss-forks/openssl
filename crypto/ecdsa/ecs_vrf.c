@@ -58,7 +58,7 @@
 
 #include "ecs_locl.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 /* returns

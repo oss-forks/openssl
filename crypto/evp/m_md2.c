@@ -57,16 +57,16 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef OPENSSL_NO_MD2
 
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/md2.h>
+#include "evp.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
+#include "../md2/md2.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 
 static int init(EVP_MD_CTX *ctx)
@@ -98,4 +98,6 @@ const EVP_MD *EVP_md2(void)
 	{
 	return(&md2_md);
 	}
+#else
+void * openssl_m_md2_dummy = &openssl_m_md2_dummy;
 #endif

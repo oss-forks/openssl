@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/objects.h>
+#include "../cryptlib.h"
+#include "evp.h"
+#include "../objects/objects.h"
 
 #ifndef OPENSSL_FIPS
 

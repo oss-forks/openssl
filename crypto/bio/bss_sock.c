@@ -59,11 +59,11 @@
 #include <stdio.h>
 #include <errno.h>
 #define USE_SOCKETS
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef OPENSSL_NO_SOCK
 
-#include <openssl/bio.h>
+#include "bio.h"
 
 #ifdef WATT32
 #define sock_write SockWrite  /* Watt-32 uses same names */

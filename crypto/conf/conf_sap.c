@@ -57,14 +57,14 @@
  */
 
 #include <stdio.h>
-#include <openssl/crypto.h>
-#include "cryptlib.h"
-#include <openssl/conf.h>
-#include <openssl/dso.h>
-#include <openssl/x509.h>
-#include <openssl/asn1.h>
+#include "../crypto.h"
+#include "../cryptlib.h"
+#include "conf.h"
+#include "../dso/dso.h"
+#include "../x509/x509.h"
+#include "../asn1/asn1.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 /* This is the automatic configuration loader: it is called automatically by

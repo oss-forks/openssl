@@ -58,20 +58,20 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/rand.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
-#include <openssl/pkcs12.h>
-#include "asn1_locl.h"
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "../objects/objects.h"
+#include "../evp/evp.h"
+#include "../rand/rand.h"
+#include "../x509/x509.h"
+#include "pem.h"
+#include "../pkcs12/pkcs12.h"
+#include "../asn1/asn1_locl.h"
 #ifndef OPENSSL_NO_DES
-#include <openssl/des.h>
+#include "../des/des.h"
 #endif
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
 const char PEM_version[]="PEM" OPENSSL_VERSION_PTEXT;

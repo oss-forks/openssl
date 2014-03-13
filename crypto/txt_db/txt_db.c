@@ -59,9 +59,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/txt_db.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "txt_db.h"
 
 #undef BUFSIZE
 #define BUFSIZE	512

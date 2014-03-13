@@ -51,12 +51,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/evp.h>
-#include <openssl/cmac.h>
-#include "evp_locl.h"
+#include "../cryptlib.h"
+#include "../x509/x509.h"
+#include "../x509v3/x509v3.h"
+#include "../evp/evp.h"
+#include "cmac.h"
+#include "../evp/evp_locl.h"
 
 /* The context structure and "key" is simply a CMAC_CTX */
 

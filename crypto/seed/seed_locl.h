@@ -26,8 +26,8 @@
 #ifndef HEADER_SEED_LOCL_H
 #define HEADER_SEED_LOCL_H
 
-#include "openssl/e_os2.h"
-#include <openssl/seed.h>
+#include "../../e_os2.h"
+#include "seed.h"
 
 
 #ifdef SEED_LONG /* need 32-bit type */

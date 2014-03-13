@@ -2,7 +2,8 @@
 
 #ifndef CHARSET_EBCDIC
 
-#include <openssl/e_os2.h>
+#include "../e_os2.h"
+void *ebcdic_dummy_openssl_=&ebcdic_dummy_openssl_;
 #if defined(PEDANTIC) || defined(__DECC) || defined(OPENSSL_SYS_MACOSX)
 static void *dummy=&dummy;
 #endif

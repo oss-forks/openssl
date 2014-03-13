@@ -9,13 +9,13 @@
  *         OpenSSL 0.9.9 libraries required to compile and use        *
  *                              this code                             *
  **********************************************************************/ 
-#include <openssl/bn.h>
-#include <openssl/evp.h>
-#include <openssl/dsa.h>
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/engine.h>
-#include <openssl/ec.h>
+#include "../../crypto/bn/bn.h"
+#include "../../crypto/evp/evp.h"
+#include "../../crypto/dsa/dsa.h"
+#include "../../crypto/asn1/asn1t.h"
+#include "../../crypto/x509/x509.h"
+#include "../../crypto/engine/engine.h"
+#include "../../crypto/ec/ec.h"
 #include "gost89.h"
 #include "gosthash.h"
 /* Control commands */

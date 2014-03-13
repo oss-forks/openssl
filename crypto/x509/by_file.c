@@ -60,11 +60,11 @@
 #include <time.h>
 #include <errno.h>
 
-#include "cryptlib.h"
-#include <openssl/lhash.h>
-#include <openssl/buffer.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
+#include "../cryptlib.h"
+#include "../lhash/lhash.h"
+#include "../buffer/buffer.h"
+#include "x509.h"
+#include "../pem/pem.h"
 
 #ifndef OPENSSL_NO_STDIO
 

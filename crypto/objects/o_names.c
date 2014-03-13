@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <openssl/err.h>
-#include <openssl/lhash.h>
-#include <openssl/objects.h>
-#include <openssl/safestack.h>
-#include <openssl/e_os2.h>
+#include "../err/err.h"
+#include "../lhash/lhash.h"
+#include "../objects/objects.h"
+#include "../stack/safestack.h"
+#include "../../e_os2.h"
 
 /* Later versions of DEC C has started to add lnkage information to certain
  * functions, which makes it tricky to use them as values to regular function

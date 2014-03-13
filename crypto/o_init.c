@@ -52,11 +52,11 @@
  *
  */
 
-#include <e_os.h>
-#include <openssl/err.h>
+#include "../e_os.h"
+#include "err/err.h"
 #ifdef OPENSSL_FIPS
-#include <openssl/fips.h>
-#include <openssl/rand.h>
+#include "fips/fips.h"
+#include "rand/rand.h"
 #endif
 
 /* Perform any essential OpenSSL initialization operations.

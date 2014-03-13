@@ -57,8 +57,8 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "asn1.h"
 
 int ASN1_BIT_STRING_set(ASN1_BIT_STRING *x, unsigned char *d, int len)
 { return M_ASN1_BIT_STRING_set(x, d, len); }

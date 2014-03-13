@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/bn.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "../bn/bn.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
+#include "../x509v3/x509v3.h"
 
 #ifndef OPENSSL_NO_FP_API
 int X509_CRL_print_fp(FILE *fp, X509_CRL *x)

@@ -57,8 +57,8 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "asn1.h"
 
 ASN1_OCTET_STRING *ASN1_OCTET_STRING_dup(const ASN1_OCTET_STRING *x)
 { return M_ASN1_OCTET_STRING_dup(x); }

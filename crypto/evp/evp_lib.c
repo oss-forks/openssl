@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/objects.h>
+#include "../cryptlib.h"
+#include "evp.h"
+#include "../objects/objects.h"
 
 int EVP_CIPHER_param_to_asn1(EVP_CIPHER_CTX *c, ASN1_TYPE *type)
 	{

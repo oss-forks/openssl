@@ -57,28 +57,28 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/err.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/asn1_mac.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "../err/err.h"
+#include "../objects/objects.h"
+#include "evp.h"
+#include "../asn1/asn1_mac.h"
+#include "../x509/x509.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../dh/dh.h"
 #endif
 
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 
-#include "asn1_locl.h"
+#include "../asn1/asn1_locl.h"
 
 static void EVP_PKEY_free_it(EVP_PKEY *x);
 

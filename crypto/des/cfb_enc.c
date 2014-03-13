@@ -56,7 +56,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include "e_os.h"
+#include "../../e_os.h"
 #include "des_locl.h"
 #include <assert.h>
 

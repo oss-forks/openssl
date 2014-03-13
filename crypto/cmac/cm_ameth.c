@@ -51,10 +51,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/cmac.h>
-#include "asn1_locl.h"
+#include "../cryptlib.h"
+#include "../evp/evp.h"
+#include "cmac.h"
+#include "../asn1/asn1_locl.h"
 
 /* CMAC "ASN1" method. This is just here to indicate the
  * maximum CMAC output length and to free up a CMAC

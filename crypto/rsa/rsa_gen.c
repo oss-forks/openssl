@@ -64,9 +64,9 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "rsa.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif

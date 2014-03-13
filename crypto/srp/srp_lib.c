@@ -57,10 +57,10 @@
  *
  */
 #ifndef OPENSSL_NO_SRP
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #include "srp_lcl.h"
-#include <openssl/srp.h>
-#include <openssl/evp.h>
+#include "srp.h"
+#include "../evp/evp.h"
 
 #if (BN_BYTES == 8)
 # if (defined(_WIN32) || defined(_WIN64)) && !defined(__MINGW32__)

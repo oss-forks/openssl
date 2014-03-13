@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "../evp/evp.h"
+#include "../objects/objects.h"
+#include "x509.h"
 
 int X509_certificate_type(X509 *x, EVP_PKEY *pkey)
 	{

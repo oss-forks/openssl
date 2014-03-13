@@ -57,7 +57,7 @@
  */
 
 #include <string.h>
-#include <openssl/err.h>
+#include "../err/err.h"
 #include "str_locl.h"
 
 /* The memory store is currently highly experimental.  It's meant to become

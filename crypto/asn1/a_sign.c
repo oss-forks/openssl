@@ -112,17 +112,17 @@
 #include <stdio.h>
 #include <time.h>
 
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>
 #endif
 
-#include <openssl/bn.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/objects.h>
-#include <openssl/buffer.h>
+#include "../bn/bn.h"
+#include "../evp/evp.h"
+#include "../x509/x509.h"
+#include "../objects/objects.h"
+#include "../buffer/buffer.h"
 #include "asn1_locl.h"
 
 #ifndef NO_ASN1_OLD

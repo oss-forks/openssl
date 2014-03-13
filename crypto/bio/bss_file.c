@@ -85,9 +85,9 @@
 
 #include <stdio.h>
 #include <errno.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #include "bio_lcl.h"
-#include <openssl/err.h>
+#include "../err/err.h"
 
 #if defined(OPENSSL_SYS_NETWARE) && defined(NETWARE_CLIB)
 #include <nwfileio.h>

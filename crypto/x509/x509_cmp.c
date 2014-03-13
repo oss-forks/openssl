@@ -58,11 +58,11 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1.h"
+#include "../objects/objects.h"
+#include "x509.h"
+#include "../x509v3/x509v3.h"
 
 int X509_issuer_and_serial_cmp(const X509 *a, const X509 *b)
 	{

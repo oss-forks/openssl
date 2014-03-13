@@ -57,55 +57,55 @@
  */
 
 #include <stdio.h>
-#include <openssl/asn1.h>
-#include <openssl/bn.h>
+#include "../asn1/asn1.h"
+#include "../bn/bn.h"
 #ifndef OPENSSL_NO_EC
-#include <openssl/ec.h>
+#include "../ec/ec.h"
 #endif
-#include <openssl/buffer.h>
-#include <openssl/bio.h>
+#include "../buffer/buffer.h"
+#include "../bio/bio.h"
 #ifndef OPENSSL_NO_COMP
-#include <openssl/comp.h>
+#include "../comp/comp.h"
 #endif
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../dh/dh.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
 #ifndef OPENSSL_NO_ECDSA
-#include <openssl/ecdsa.h>
+#include "../ecdsa/ecdsa.h"
 #endif
 #ifndef OPENSSL_NO_ECDH
-#include <openssl/ecdh.h>
+#include "../ecdh/ecdh.h"
 #endif
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/pem2.h>
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
-#include <openssl/conf.h>
-#include <openssl/pkcs12.h>
-#include <openssl/rand.h>
-#include <openssl/dso.h>
+#include "../evp/evp.h"
+#include "../objects/objects.h"
+#include "../pem/pem2.h"
+#include "../x509/x509.h"
+#include "../x509v3/x509v3.h"
+#include "../conf/conf.h"
+#include "../pkcs12/pkcs12.h"
+#include "../rand/rand.h"
+#include "../dso/dso.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
-#include <openssl/ui.h>
-#include <openssl/ocsp.h>
-#include <openssl/err.h>
+#include "../ui/ui.h"
+#include "../ocsp/ocsp.h"
+#include "err.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif
-#include <openssl/ts.h>
+#include "../ts/ts.h"
 #ifndef OPENSSL_NO_CMS
-#include <openssl/cms.h>
+#include "../cms/cms.h"
 #endif
 #ifndef OPENSSL_NO_JPAKE
-#include <openssl/jpake.h>
+#include "../jpake/jpake.h"
 #endif
 
 void ERR_load_crypto_strings(void)

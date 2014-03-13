@@ -59,7 +59,7 @@
  */
 
 #include <stdio.h>
-#include <openssl/err.h>
+#include "../../crypto/err/err.h"
 #include "e_gost_err.h"
 
 /* BEGIN ERROR CODES */

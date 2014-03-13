@@ -59,9 +59,9 @@
 /* Simple PKCS#7 processing functions */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../x509/x509.h"
+#include "../x509v3/x509v3.h"
 
 static int pkcs7_copy_existing_digest(PKCS7 *p7, PKCS7_SIGNER_INFO *si);
 

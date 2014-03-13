@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../x509/x509.h"
+#include "../rand/rand.h"
 
 /* PKCS#5 v2.0 password based encryption structures */
 

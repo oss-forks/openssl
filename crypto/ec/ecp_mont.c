@@ -61,7 +61,7 @@
  * and contributed to the OpenSSL project.
  */
 
-#include <openssl/err.h>
+#include "../err/err.h"
 
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>

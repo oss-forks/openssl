@@ -56,10 +56,10 @@
 #include <string.h>
 #include "ecs_locl.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
-#include <openssl/err.h>
-#include <openssl/bn.h>
+#include "../err/err.h"
+#include "../bn/bn.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif

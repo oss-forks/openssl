@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/objects.h>
-#include <openssl/comp.h>
-#include <openssl/err.h>
+#include "../objects/objects.h"
+#include "../comp/comp.h"
+#include "../err/err.h"
 
 COMP_METHOD *COMP_zlib(void );
 
@@ -92,7 +92,7 @@ static COMP_METHOD zlib_stateful_method={
 #endif /* !(OPENSSL_SYS_WINDOWS || OPENSSL_SYS_WIN32) */
 
 #ifdef ZLIB_SHARED
-#include <openssl/dso.h>
+#include "../dso/dso.h"
 
 /* Function pointers */
 typedef int (*compress_ft)(Bytef *dest,uLongf *destLen,

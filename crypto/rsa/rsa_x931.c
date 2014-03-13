@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rsa.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "rsa.h"
+#include "../rand/rand.h"
+#include "../objects/objects.h"
 
 int RSA_padding_add_X931(unsigned char *to, int tlen,
 	     const unsigned char *from, int flen)

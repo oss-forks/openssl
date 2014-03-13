@@ -65,7 +65,7 @@
 
 #include <stdio.h>
 
-#include <openssl/e_os2.h>
+#include "../../e_os2.h"
 #include OPENSSL_UNISTD_IO
 OPENSSL_DECLARE_EXIT
 
@@ -99,7 +99,7 @@ OPENSSL_DECLARE_EXIT
 #include <sys/param.h>
 #endif
 
-#include <openssl/blowfish.h>
+#include "blowfish.h"
 
 #define BF_DEFAULT_OPTIONS
 

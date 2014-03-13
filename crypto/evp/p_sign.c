@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "evp.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
 
 #ifdef undef
 void EVP_SignInit(EVP_MD_CTX *ctx, EVP_MD *type)

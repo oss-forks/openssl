@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/bn.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../bn/bn.h"
 
 /* Custom primitive type for BIGNUM handling. This reads in an ASN1_INTEGER as a
  * BIGNUM directly. Currently it ignores the sign which isn't a problem since all

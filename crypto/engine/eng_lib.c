@@ -57,7 +57,7 @@
  */
 
 #include "eng_int.h"
-#include <openssl/rand.h>
+#include "../rand/rand.h"
 
 /* The "new"/"free" stuff first */
 

@@ -8,13 +8,13 @@
  *          Requires OpenSSL 0.9.9 for compilation                    *
  **********************************************************************/
 #include <string.h>
-#include <openssl/crypto.h>
-#include <openssl/err.h>
-#include <openssl/engine.h>
-#include <openssl/evp.h>
-#include <openssl/asn1.h>
+#include "../../crypto/crypto.h"
+#include "../../crypto/err/err.h"
+#include "../../crypto/engine/engine.h"
+#include "../../crypto/evp/evp.h"
+#include "../../crypto/asn1/asn1.h"
 #ifndef OPENSSL_NO_CMS
-#include <openssl/cms.h>
+#include "../../crypto/cms/cms.h"
 #endif
 #include "gost_params.h"
 #include "gost_lcl.h"

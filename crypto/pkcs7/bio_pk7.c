@@ -52,9 +52,9 @@
  *
  */
 
-#include <openssl/asn1.h>
-#include <openssl/pkcs7.h>
-#include <openssl/bio.h>
+#include "../asn1/asn1.h"
+#include "pkcs7.h"
+#include "../bio/bio.h"
 
 #if !defined(OPENSSL_SYSNAME_NETWARE) && !defined(OPENSSL_SYSNAME_VXWORKS)
 #include <memory.h>

@@ -60,7 +60,7 @@
 #include <time.h>
 #include <errno.h>
 
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>
@@ -69,8 +69,8 @@
 # include <sys/stat.h>
 #endif
 
-#include <openssl/lhash.h>
-#include <openssl/x509.h>
+#include "../lhash/lhash.h"
+#include "x509.h"
 
 
 typedef struct lookup_dir_hashes_st

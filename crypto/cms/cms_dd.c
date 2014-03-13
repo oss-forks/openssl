@@ -51,12 +51,12 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
-#include <openssl/err.h>
-#include <openssl/cms.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../pem/pem.h"
+#include "../x509v3/x509v3.h"
+#include "../err/err.h"
+#include "../cms/cms.h"
 #include "cms_lcl.h"
 
 DECLARE_ASN1_ITEM(CMS_DigestedData)

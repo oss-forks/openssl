@@ -58,8 +58,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "cryptlib.h"
-#include <openssl/hmac.h>
+#include "../cryptlib.h"
+#include "hmac.h"
 
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>

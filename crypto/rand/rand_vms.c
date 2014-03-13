@@ -56,7 +56,7 @@
  *
  */
 
-#include <openssl/rand.h>
+#include "rand.h"
 #include "rand_lcl.h"
 
 #if defined(OPENSSL_SYS_VMS)
@@ -145,4 +145,6 @@ int RAND_poll(void)
 	return 1;
 }
 
+#else
+void * openssl_rand_vms_dummy = &openssl_rand_vms_dummy;
 #endif

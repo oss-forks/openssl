@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/err.h>
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "evp.h"
+#include "../err/err.h"
+#include "../rand/rand.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>

@@ -111,9 +111,9 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #include "bn_lcl.h"
-#include <openssl/rand.h>
+#include "../rand/rand.h"
 
 /* NB: these functions have been "upgraded", the deprecated versions (which are
  * compatibility wrappers using these functions) are in bn_depr.c.

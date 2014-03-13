@@ -57,13 +57,13 @@
  *
  */
 #ifndef OPENSSL_NO_SRP
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #include "srp_lcl.h"
-#include <openssl/srp.h>
-#include <openssl/evp.h>
-#include <openssl/buffer.h>
-#include <openssl/rand.h>
-#include <openssl/txt_db.h>
+#include "srp.h"
+#include "../evp/evp.h"
+#include "../buffer/buffer.h"
+#include "../rand/rand.h"
+#include "../txt_db/txt_db.h"
 
 #define SRP_RANDOM_SALT_LEN 20
 #define MAX_LEN 2500

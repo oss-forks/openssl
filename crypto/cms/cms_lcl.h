@@ -58,7 +58,7 @@
 extern "C" {
 #endif
 
-#include <openssl/x509.h>
+#include "../x509/x509.h"
 
 /* Cryptographic message syntax (CMS) structures: taken
  * from RFC3852

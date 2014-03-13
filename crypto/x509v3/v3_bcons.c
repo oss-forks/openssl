@@ -58,11 +58,11 @@
 
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
-#include <openssl/conf.h>
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1.h"
+#include "../asn1/asn1t.h"
+#include "../conf/conf.h"
+#include "x509v3.h"
 
 static STACK_OF(CONF_VALUE) *i2v_BASIC_CONSTRAINTS(X509V3_EXT_METHOD *method, BASIC_CONSTRAINTS *bcons, STACK_OF(CONF_VALUE) *extlist);
 static BASIC_CONSTRAINTS *v2i_BASIC_CONSTRAINTS(X509V3_EXT_METHOD *method, X509V3_CTX *ctx, STACK_OF(CONF_VALUE) *values);

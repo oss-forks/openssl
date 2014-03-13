@@ -1,14 +1,14 @@
 /* crypto/evp/m_wp.c */
 
 #include <stdio.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef OPENSSL_NO_WHIRLPOOL
 
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/whrlpool.h>
+#include "evp.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
+#include "../whrlpool/whrlpool.h"
 #include "evp_locl.h"
 
 static int init(EVP_MD_CTX *ctx)

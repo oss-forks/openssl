@@ -57,11 +57,11 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1.h"
+#include "../objects/objects.h"
+#include "../evp/evp.h"
+#include "x509.h"
 
 int X509_CRL_set_version(X509_CRL *x, long version)
 	{

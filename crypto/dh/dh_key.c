@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/bn.h>
-#include <openssl/rand.h>
-#include <openssl/dh.h>
+#include "../cryptlib.h"
+#include "../bn/bn.h"
+#include "../rand/rand.h"
+#include "dh.h"
 
 static int generate_key(DH *dh);
 static int compute_key(unsigned char *key, const BIGNUM *pub_key, DH *dh);

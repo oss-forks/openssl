@@ -5,7 +5,7 @@
  * forms are granted according to the OpenSSL license.
  */
 
-#include <openssl/crypto.h>
+#include "../crypto.h"
 #include "modes_lcl.h"
 #include <string.h>
 
@@ -302,7 +302,7 @@ size_t CRYPTO_nistcts128_decrypt(const unsigned char *in, unsigned char *out,
 
 #if defined(SELFTEST)
 #include <stdio.h>
-#include <openssl/aes.h>
+#include "../aes/aes.h"
 
 /* test vectors from RFC 3962 */
 static const unsigned char test_key[16] = "chicken teriyaki";

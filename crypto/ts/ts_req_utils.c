@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/objects.h>
-#include <openssl/x509v3.h>
-#include <openssl/ts.h>
+#include "../cryptlib.h"
+#include "../objects/objects.h"
+#include "../x509v3/x509v3.h"
+#include "ts.h"
 
 int TS_REQ_set_version(TS_REQ *a, long version)
 	{

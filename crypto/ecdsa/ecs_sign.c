@@ -55,9 +55,9 @@
 
 #include "ecs_locl.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../engine/engine.h"
 #endif
-#include <openssl/rand.h>
+#include "../rand/rand.h"
 
 ECDSA_SIG *ECDSA_do_sign(const unsigned char *dgst, int dlen, EC_KEY *eckey)
 {

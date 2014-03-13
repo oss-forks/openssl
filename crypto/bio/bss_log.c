@@ -66,7 +66,7 @@
 #include <stdio.h>
 #include <errno.h>
 
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #if defined(OPENSSL_SYS_WINCE)
 #elif defined(OPENSSL_SYS_WIN32)
@@ -92,8 +92,8 @@
 #  include <syslog.h>
 #endif
 
-#include <openssl/buffer.h>
-#include <openssl/err.h>
+#include "../buffer/buffer.h"
+#include "../err/err.h"
 
 #ifndef NO_SYSLOG
 

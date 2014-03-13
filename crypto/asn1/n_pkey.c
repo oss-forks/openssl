@@ -57,14 +57,14 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
-#include <openssl/objects.h>
-#include <openssl/asn1t.h>
-#include <openssl/asn1_mac.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
+#include "../rsa/rsa.h"
+#include "../objects/objects.h"
+#include "asn1t.h"
+#include "asn1_mac.h"
+#include "../evp/evp.h"
+#include "../x509/x509.h"
 
 
 #ifndef OPENSSL_NO_RC4

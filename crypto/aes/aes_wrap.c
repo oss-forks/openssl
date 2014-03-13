@@ -51,9 +51,9 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
-#include <openssl/aes.h>
-#include <openssl/bio.h>
+#include "../cryptlib.h"
+#include "aes.h"
+#include "../bio/bio.h"
 
 static const unsigned char default_iv[] = {
   0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6,

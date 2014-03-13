@@ -56,13 +56,13 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/evp.h>
-#include <openssl/dh.h>
-#include <openssl/bn.h>
-#include "evp_locl.h"
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "../evp/evp.h"
+#include "dh.h"
+#include "../bn/bn.h"
+#include "../evp/evp_locl.h"
 
 /* DH pkey context structure */
 

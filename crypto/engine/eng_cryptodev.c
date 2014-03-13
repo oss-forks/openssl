@@ -26,10 +26,10 @@
  *
  */
 
-#include <openssl/objects.h>
-#include <openssl/engine.h>
-#include <openssl/evp.h>
-#include <openssl/bn.h>
+#include "../objects/objects.h"
+#include "engine.h"
+#include "../evp/evp.h"
+#include "../bn/bn.h"
 
 #if (defined(__unix__) || defined(unix)) && !defined(USG) && \
 	(defined(OpenBSD) || defined(__FreeBSD__))

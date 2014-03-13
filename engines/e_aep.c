@@ -53,10 +53,10 @@
  */
 
 #include <stdio.h>
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 #include <string.h>
 
-#include <openssl/e_os2.h>
+#include "../e_os2.h"
 #if !defined(OPENSSL_SYS_MSDOS) || defined(__DJGPP__) || defined(__MINGW32__)
 #include <sys/types.h>
 #include <unistd.h>
@@ -72,18 +72,18 @@ extern int GetThreadID(void);
 #define getpid _getpid
 #endif
 
-#include <openssl/crypto.h>
-#include <openssl/dso.h>
-#include <openssl/engine.h>
-#include <openssl/buffer.h>
+#include "../crypto/crypto.h"
+#include "../crypto/dso/dso.h"
+#include "../crypto/engine/engine.h"
+#include "../crypto/buffer/buffer.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../crypto/dsa/dsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
 
 #ifndef OPENSSL_NO_HW

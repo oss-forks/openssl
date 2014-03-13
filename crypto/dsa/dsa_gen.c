@@ -69,16 +69,16 @@
 #define HASH    EVP_sha1()
 #endif 
 
-#include <openssl/opensslconf.h> /* To see if OPENSSL_NO_SHA is defined */
+#include "../opensslconf.h" /* To see if OPENSSL_NO_SHA is defined */
 
 #ifndef OPENSSL_NO_SHA
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/bn.h>
-#include <openssl/rand.h>
-#include <openssl/sha.h>
+#include "../cryptlib.h"
+#include "../evp/evp.h"
+#include "../bn/bn.h"
+#include "../rand/rand.h"
+#include "../sha/sha.h"
 #include "dsa_locl.h"
 
 #ifdef OPENSSL_FIPS

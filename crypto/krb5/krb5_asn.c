@@ -55,9 +55,9 @@
  * Hudson (tjh@cryptsoft.com).
  *
  */
-#include <openssl/asn1.h>
-#include <openssl/asn1t.h>
-#include <openssl/krb5_asn.h>
+#include "../asn1/asn1.h"
+#include "../asn1/asn1t.h"
+#include "krb5_asn.h"
 
 
 ASN1_SEQUENCE(KRB5_ENCDATA) = {

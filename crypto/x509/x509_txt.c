@@ -60,13 +60,13 @@
 #include <time.h>
 #include <errno.h>
 
-#include "cryptlib.h"
-#include <openssl/lhash.h>
-#include <openssl/buffer.h>
-#include <openssl/evp.h>
-#include <openssl/asn1.h>
-#include <openssl/x509.h>
-#include <openssl/objects.h>
+#include "../cryptlib.h"
+#include "../lhash/lhash.h"
+#include "../buffer/buffer.h"
+#include "../evp/evp.h"
+#include "../asn1/asn1.h"
+#include "x509.h"
+#include "../objects/objects.h"
 
 const char *X509_verify_cert_error_string(long n)
 	{

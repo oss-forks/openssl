@@ -57,9 +57,9 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/bn.h>
+#include "../cryptlib.h"
+#include "asn1t.h"
+#include "../bn/bn.h"
 
 /* Custom primitive type for long handling. This converts between an ASN1_INTEGER
  * and a long directly.

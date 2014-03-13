@@ -58,8 +58,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <openssl/e_os2.h>
-#include <openssl/md5.h>
+#include "../../e_os2.h"
+#include "md5.h"
 
 #ifndef MD5_LONG_LOG2
 #define MD5_LONG_LOG2 2 /* default to 32 bits */
@@ -93,7 +93,7 @@ void md5_block_data_order (MD5_CTX *c, const void *p,size_t num);
 	} while (0)
 #define	HASH_BLOCK_DATA_ORDER	md5_block_data_order
 
-#include "md32_common.h"
+#include "../md32_common.h"
 
 /*
 #define	F(x,y,z)	(((x) & (y))  |  ((~(x)) & (z)))

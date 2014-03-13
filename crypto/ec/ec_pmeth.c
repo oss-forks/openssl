@@ -56,13 +56,13 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/x509.h>
-#include <openssl/ec.h>
-#include <openssl/ecdsa.h>
-#include <openssl/evp.h>
-#include "evp_locl.h"
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../x509/x509.h"
+#include "ec.h"
+#include "../ecdsa/ecdsa.h"
+#include "../evp/evp.h"
+#include "../evp/evp_locl.h"
 
 /* EC pkey context structure */
 

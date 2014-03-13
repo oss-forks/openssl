@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/evp.h>
-#include <openssl/pkcs12.h>
-#include <openssl/x509.h>
+#include "../cryptlib.h"
+#include "evp.h"
+#include "../pkcs12/pkcs12.h"
+#include "../x509/x509.h"
 #include "evp_locl.h"
 
 /* Password based encryption (PBE) functions */

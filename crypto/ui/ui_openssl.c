@@ -115,7 +115,7 @@
  */
 
 
-#include <openssl/e_os2.h>
+#include "../../e_os2.h"
 
 /* need for #define _POSIX_C_SOURCE arises whenever you pass -ansi to gcc
  * [maybe others?], because it masks interfaces not discussed in standard,
@@ -163,7 +163,7 @@
 
 /* 06-Apr-92 Luke Brennan    Support for VMS */
 #include "ui_locl.h"
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifdef OPENSSL_SYS_VMS		/* prototypes for sys$whatever */
 # include <starlet.h>

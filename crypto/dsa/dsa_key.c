@@ -58,11 +58,11 @@
 
 #include <stdio.h>
 #include <time.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 #ifndef OPENSSL_NO_SHA
-#include <openssl/bn.h>
-#include <openssl/dsa.h>
-#include <openssl/rand.h>
+#include "../bn/bn.h"
+#include "dsa.h"
+#include "../rand/rand.h"
 
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>

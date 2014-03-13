@@ -64,38 +64,38 @@
 #ifndef HEADER_ENGINE_H
 #define HEADER_ENGINE_H
 
-#include <openssl/opensslconf.h>
+#include "../opensslconf.h"
 
 #ifdef OPENSSL_NO_ENGINE
 #error ENGINE is disabled.
 #endif
 
 #ifndef OPENSSL_NO_DEPRECATED
-#include <openssl/bn.h>
+#include "../bn/bn.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../dh/dh.h"
 #endif
 #ifndef OPENSSL_NO_ECDH
-#include <openssl/ecdh.h>
+#include "../ecdh/ecdh.h"
 #endif
 #ifndef OPENSSL_NO_ECDSA
-#include <openssl/ecdsa.h>
+#include "../ecdsa/ecdsa.h"
 #endif
-#include <openssl/rand.h>
-#include <openssl/ui.h>
-#include <openssl/err.h>
+#include "../rand/rand.h"
+#include "../ui/ui.h"
+#include "../err/err.h"
 #endif
 
-#include <openssl/ossl_typ.h>
-#include <openssl/symhacks.h>
+#include "../ossl_typ.h"
+#include "../symhacks.h"
 
-#include <openssl/x509.h>
+#include "../x509/x509.h"
 
 #ifdef  __cplusplus
 extern "C" {

@@ -51,16 +51,16 @@
  * ====================================================================
  */
 
-#include "cryptlib.h"
-#include <openssl/asn1t.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
-#include <openssl/err.h>
-#include <openssl/cms.h>
-#include <openssl/rand.h>
-#include <openssl/aes.h>
+#include "../cryptlib.h"
+#include "../asn1/asn1t.h"
+#include "../pem/pem.h"
+#include "../x509v3/x509v3.h"
+#include "../err/err.h"
+#include "../cms/cms.h"
+#include "../rand/rand.h"
+#include "../aes/aes.h"
 #include "cms_lcl.h"
-#include "asn1_locl.h"
+#include "../asn1/asn1_locl.h"
 
 /* CMS EnvelopedData Utilities */
 

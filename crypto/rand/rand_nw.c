@@ -109,8 +109,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "rand.h"
 #include "rand_lcl.h"
 
 #if defined (OPENSSL_SYS_NETWARE)
@@ -179,5 +179,7 @@ int RAND_poll(void)
    return 1;
 }
 
+#else
+void * openssl_rand_nw_dummy = &openssl_rand_nw_dummy;
 #endif 
 

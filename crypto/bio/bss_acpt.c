@@ -59,8 +59,8 @@
 #include <stdio.h>
 #include <errno.h>
 #define USE_SOCKETS
-#include "cryptlib.h"
-#include <openssl/bio.h>
+#include "../cryptlib.h"
+#include "bio.h"
 
 #ifndef OPENSSL_NO_SOCK
 

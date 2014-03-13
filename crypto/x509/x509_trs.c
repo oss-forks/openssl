@@ -57,8 +57,8 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/x509v3.h>
+#include "../cryptlib.h"
+#include "../x509v3/x509v3.h"
 
 
 static int tr_cmp(const X509_TRUST * const *a,

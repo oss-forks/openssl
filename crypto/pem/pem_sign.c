@@ -57,12 +57,12 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/rand.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509.h>
-#include <openssl/pem.h>
+#include "../cryptlib.h"
+#include "../rand/rand.h"
+#include "../evp/evp.h"
+#include "../objects/objects.h"
+#include "../x509/x509.h"
+#include "pem.h"
 
 void PEM_SignInit(EVP_MD_CTX *ctx, EVP_MD *type)
 	{

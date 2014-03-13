@@ -57,10 +57,10 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/objects.h>
-#include <openssl/asn1.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "../objects/objects.h"
+#include "asn1.h"
 
 static int asn1_print_info(BIO *bp, int tag, int xclass,int constructed,
 	int indent);

@@ -57,15 +57,15 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
+#include "../cryptlib.h"
 
 #ifndef OPENSSL_NO_SHA
 
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/sha.h>
+#include "evp.h"
+#include "../objects/objects.h"
+#include "../sha/sha.h"
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../dsa/dsa.h"
 #endif
 
 #ifndef OPENSSL_FIPS 

@@ -53,13 +53,13 @@
  *
  */
 
-#include <openssl/opensslconf.h>
+#include "../opensslconf.h"
 #ifndef OPENSSL_NO_CAMELLIA
-#include <openssl/evp.h>
-#include <openssl/err.h>
+#include "evp.h"
+#include "../err/err.h"
 #include <string.h>
 #include <assert.h>
-#include <openssl/camellia.h>
+#include "../camellia/camellia.h"
 #include "evp_locl.h"
 
 static int camellia_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,

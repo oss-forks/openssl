@@ -58,8 +58,8 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "cryptlib.h"
-#include <openssl/dso.h>
+#include "../cryptlib.h"
+#include "dso.h"
 
 #if !defined(OPENSSL_SYS_BEOS)
 DSO_METHOD *DSO_METHOD_beos(void)

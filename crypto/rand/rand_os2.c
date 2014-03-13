@@ -53,8 +53,8 @@
  *
  */
 
-#include "cryptlib.h"
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "rand.h"
 #include "rand_lcl.h"
 
 #ifdef OPENSSL_SYS_OS2
@@ -150,4 +150,6 @@ int RAND_poll(void)
     return 0;
 }
 
+#else
+void * openssl_rand_os2_dummy = &openssl_rand_os2_dummy;
 #endif /* OPENSSL_SYS_OS2 */

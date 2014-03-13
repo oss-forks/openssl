@@ -18,7 +18,7 @@
  *  limitations under the License.
  */
 
-#include <openssl/opensslconf.h>
+#include "../opensslconf.h"
 #ifndef OPENSSL_NO_EC_NISTP_64_GCC_128
 
 /*
@@ -194,4 +194,5 @@ void ec_GFp_nistp_recode_scalar_bits(unsigned char *sign, unsigned char *digit, 
 	}
 #else
 static void *dummy=&dummy;
+void * openssl_ecp_nistputil_dummy = &openssl_ecp_nistputil_dummy;
 #endif

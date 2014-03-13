@@ -55,9 +55,9 @@
  *
  */
 
-#include <openssl/ts.h>
-#include <openssl/err.h>
-#include <openssl/asn1t.h>
+#include "ts.h"
+#include "../err/err.h"
+#include "../asn1/asn1t.h"
 
 ASN1_SEQUENCE(TS_MSG_IMPRINT) = {
 	ASN1_SIMPLE(TS_MSG_IMPRINT, hash_algo, X509_ALGOR),

@@ -8,7 +8,7 @@
 #ifndef HEADER_JPAKE_H
 #define HEADER_JPAKE_H
 
-#include <openssl/opensslconf.h>
+#include "../opensslconf.h"
 
 #ifdef OPENSSL_NO_JPAKE
 #error JPAKE is disabled.
@@ -18,8 +18,8 @@
 extern "C" {
 #endif
 
-#include <openssl/bn.h>
-#include <openssl/sha.h>
+#include "../bn/bn.h"
+#include "../sha/sha.h"
 
 typedef struct JPAKE_CTX JPAKE_CTX;
 

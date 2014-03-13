@@ -120,11 +120,11 @@
 #include <stdio.h>
 #include <errno.h>
 #include <assert.h>
-#include "cryptlib.h"
-#include <openssl/buffer.h>
-#include <openssl/bio.h>
-#include <openssl/evp.h>
-#include <openssl/rand.h>
+#include "../cryptlib.h"
+#include "../buffer/buffer.h"
+#include "../bio/bio.h"
+#include "evp.h"
+#include "../rand/rand.h"
 
 static int ok_write(BIO *h, const char *buf, int num);
 static int ok_read(BIO *h, char *buf, int size);
