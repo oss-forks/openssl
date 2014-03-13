@@ -149,7 +149,7 @@
  */
 
 #include <stdio.h>
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 #include "ssl_locl.h"
 #include "kssl_lcl.h"
 #ifndef OPENSSL_NO_TLSEXT
@@ -157,9 +157,9 @@
 #include "../crypto/ec/ec_lcl.h"
 #endif /* OPENSSL_NO_EC */
 #endif /* OPENSSL_NO_TLSEXT */
-#include <openssl/md5.h>
+#include "../crypto/md5/md5.h"
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
 
 const char ssl3_version_str[]="SSLv3" OPENSSL_VERSION_PTEXT;

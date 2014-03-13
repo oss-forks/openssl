@@ -55,8 +55,8 @@
 
 #include "ssl_locl.h"
 
-#include <openssl/md5.h>
-#include <openssl/sha.h>
+#include "../crypto/md5/md5.h"
+#include "../crypto/sha/sha.h"
 
 /* MAX_HASH_BIT_COUNT_BYTES is the maximum number of bytes in the hash's length
  * field. (SHA-384/512 have 128-bit length.) */

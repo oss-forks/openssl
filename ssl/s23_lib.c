@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 #include "ssl_locl.h"
 
 long ssl23_default_timeout(void)

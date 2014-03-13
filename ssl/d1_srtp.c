@@ -116,7 +116,7 @@
 */
 
 #include <stdio.h>
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 #include "ssl_locl.h"
 
 #ifndef OPENSSL_NO_SRTP

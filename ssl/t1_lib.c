@@ -110,11 +110,11 @@
  */
 
 #include <stdio.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/hmac.h>
-#include <openssl/ocsp.h>
-#include <openssl/rand.h>
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/hmac/hmac.h"
+#include "../crypto/ocsp/ocsp.h"
+#include "../crypto/rand/rand.h"
 #include "ssl_locl.h"
 
 const char tls1_version_str[]="TLSv1" OPENSSL_VERSION_PTEXT;

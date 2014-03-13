@@ -59,7 +59,7 @@
 #ifndef	KSSL_LCL_H
 #define	KSSL_LCL_H
 
-#include <openssl/kssl.h>
+#include "kssl.h"
 
 #ifndef OPENSSL_NO_KRB5
 

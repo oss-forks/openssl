@@ -151,20 +151,20 @@
 #include <stdio.h>
 #include "ssl_locl.h"
 #include "kssl_lcl.h"
-#include <openssl/buffer.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/md5.h>
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/md5/md5.h"
 #ifdef OPENSSL_FIPS
 #include <openssl/fips.h>
 #endif
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 
 static const SSL_METHOD *ssl3_get_client_method(int ver);

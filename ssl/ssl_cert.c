@@ -116,20 +116,20 @@
 
 #include <stdio.h>
 
-#include "e_os.h"
+#include "../e_os.h"
 #ifndef NO_SYS_TYPES_H
 # include <sys/types.h>
 #endif
 
-#include "o_dir.h"
-#include <openssl/objects.h>
-#include <openssl/bio.h>
-#include <openssl/pem.h>
-#include <openssl/x509v3.h>
+#include "../crypto/o_dir.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/bio/bio.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/x509v3/x509v3.h"
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
-#include <openssl/bn.h>
+#include "../crypto/bn/bn.h"
 #include "ssl_locl.h"
 
 int SSL_get_ex_data_X509_STORE_CTX_idx(void)

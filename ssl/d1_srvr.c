@@ -115,15 +115,15 @@
 
 #include <stdio.h>
 #include "ssl_locl.h"
-#include <openssl/buffer.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
-#include <openssl/md5.h>
-#include <openssl/bn.h>
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
+#include "../crypto/md5/md5.h"
+#include "../crypto/bn/bn.h"
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
 
 static const SSL_METHOD *dtls1_get_server_method(int ver);

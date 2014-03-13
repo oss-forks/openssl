@@ -57,8 +57,8 @@
  */
 
 #include <stdio.h>
-#include <openssl/objects.h>
-#include <openssl/lhash.h>
+#include "../crypto/objects/objects.h"
+#include "../crypto/lhash/lhash.h"
 #include "ssl_locl.h"
 
 int SSL_library_init(void)

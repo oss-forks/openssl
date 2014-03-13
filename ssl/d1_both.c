@@ -117,11 +117,11 @@
 #include <string.h>
 #include <stdio.h>
 #include "ssl_locl.h"
-#include <openssl/buffer.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
-#include <openssl/x509.h>
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/x509/x509.h"
 
 #define RSMBLY_BITMASK_SIZE(msg_len) (((msg_len) + 7) / 8)
 

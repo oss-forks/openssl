@@ -11,6 +11,9 @@
 #ifndef OPENSSL_NO_GMP
 # define OPENSSL_NO_GMP
 #endif
+#ifndef OPENSSL_NO_KRB5
+# define OPENSSL_NO_KRB5
+#endif
 #ifndef OPENSSL_NO_SCTP
 # define OPENSSL_NO_SCTP
 #endif

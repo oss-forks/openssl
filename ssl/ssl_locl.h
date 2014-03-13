@@ -147,23 +147,23 @@
 #include <string.h>
 #include <errno.h>
 
-#include "e_os.h"
+#include "../../e_os.h"
 
-#include <openssl/buffer.h>
+#include "../crypto/buffer/buffer.h"
 #ifndef OPENSSL_NO_COMP
-#include <openssl/comp.h>
+#include "../crypto/comp/comp.h"
 #endif
-#include <openssl/bio.h>
-#include <openssl/stack.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/stack/stack.h"
 #ifndef OPENSSL_NO_RSA
-#include <openssl/rsa.h>
+#include "../crypto/rsa/rsa.h"
 #endif
 #ifndef OPENSSL_NO_DSA
-#include <openssl/dsa.h>
+#include "../crypto/dsa/dsa.h"
 #endif
-#include <openssl/err.h>
-#include <openssl/ssl.h>
-#include <openssl/symhacks.h>
+#include "../crypto/err/err.h"
+#include "ssl.h"
+#include "../crypto/symhacks.h"
 
 #ifdef OPENSSL_BUILD_SHLIBSSL
 # undef OPENSSL_EXTERN

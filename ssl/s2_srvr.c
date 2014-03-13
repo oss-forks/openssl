@@ -112,10 +112,10 @@
 #include "ssl_locl.h"
 #ifndef OPENSSL_NO_SSL2
 #include <stdio.h>
-#include <openssl/bio.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
+#include "../crypto/bio/bio.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
 
 static const SSL_METHOD *ssl2_get_server_method(int ver);
 static int get_client_master_key(SSL *s);

@@ -58,10 +58,10 @@
 
 #include <stdio.h>
 #include "ssl_locl.h"
-#include <openssl/buffer.h>
-#include <openssl/rand.h>
-#include <openssl/objects.h>
-#include <openssl/evp.h>
+#include "../crypto/buffer/buffer.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/evp/evp.h"
 
 static const SSL_METHOD *tls1_get_client_method(int ver);
 static const SSL_METHOD *tls1_get_client_method(int ver)

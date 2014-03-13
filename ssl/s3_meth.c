@@ -57,7 +57,7 @@
  */
 
 #include <stdio.h>
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 #include "ssl_locl.h"
 
 static const SSL_METHOD *ssl3_get_method(int ver);

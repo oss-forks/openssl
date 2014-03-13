@@ -138,14 +138,14 @@
 #include <stdio.h>
 #include "ssl_locl.h"
 #ifndef OPENSSL_NO_COMP
-#include <openssl/comp.h>
+#include "../crypto/comp/comp.h"
 #endif
-#include <openssl/evp.h>
-#include <openssl/hmac.h>
-#include <openssl/md5.h>
-#include <openssl/rand.h>
+#include "../crypto/evp/evp.h"
+#include "../crypto/hmac/hmac.h"
+#include "../crypto/md5/md5.h"
+#include "../crypto/rand/rand.h"
 #ifdef KSSL_DEBUG
-#include <openssl/des.h>
+#include "../crypto/des/des.h"
 #endif
 
 /* seed1 through seed5 are virtually concatenated */

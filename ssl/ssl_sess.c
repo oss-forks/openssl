@@ -136,10 +136,10 @@
  */
 
 #include <stdio.h>
-#include <openssl/lhash.h>
-#include <openssl/rand.h>
+#include "../crypto/lhash/lhash.h"
+#include "../crypto/rand/rand.h"
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 #include "ssl_locl.h"
 

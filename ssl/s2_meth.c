@@ -59,7 +59,7 @@
 #include "ssl_locl.h"
 #ifndef OPENSSL_NO_SSL2
 #include <stdio.h>
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 
 static const SSL_METHOD *ssl2_get_method(int ver);
 static const SSL_METHOD *ssl2_get_method(int ver)

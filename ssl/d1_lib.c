@@ -59,7 +59,7 @@
 
 #include <stdio.h>
 #define USE_SOCKETS
-#include <openssl/objects.h>
+#include "../crypto/objects/objects.h"
 #include "ssl_locl.h"
 
 #if defined(OPENSSL_SYS_WIN32) || defined(OPENSSL_SYS_VMS)

@@ -66,16 +66,16 @@
 **          		Real RFC2712 KerberosWrapper replaces AP_REQ.
 */
 
-#include <openssl/opensslconf.h>
+#include "../crypto/opensslconf.h"
 
 #include <string.h>
 
 #define KRB5_PRIVATE	1
 
-#include <openssl/ssl.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/krb5_asn.h>
+#include "ssl.h"
+#include "../crypto/evp/evp.h"
+#include "../crypto/objects/objects.h"
+#include "../crypto/krb5/krb5_asn.h"
 #include "kssl_lcl.h"
 
 #ifndef OPENSSL_NO_KRB5

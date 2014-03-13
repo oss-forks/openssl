@@ -148,16 +148,16 @@
 #include <stdio.h>
 #include "ssl_locl.h"
 #include "kssl_lcl.h"
-#include <openssl/objects.h>
-#include <openssl/lhash.h>
-#include <openssl/x509v3.h>
-#include <openssl/rand.h>
-#include <openssl/ocsp.h>
+#include "../crypto/objects/objects.h"
+#include "../crypto/lhash/lhash.h"
+#include "../crypto/x509v3/x509v3.h"
+#include "../crypto/rand/rand.h"
+#include "../crypto/ocsp/ocsp.h"
 #ifndef OPENSSL_NO_DH
-#include <openssl/dh.h>
+#include "../crypto/dh/dh.h"
 #endif
 #ifndef OPENSSL_NO_ENGINE
-#include <openssl/engine.h>
+#include "../crypto/engine/engine.h"
 #endif
 
 const char *SSL_version_str=OPENSSL_VERSION_TEXT;
