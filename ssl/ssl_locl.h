@@ -147,7 +147,7 @@
 #include <string.h>
 #include <errno.h>
 
-#include "../../e_os.h"
+#include "../e_os.h"
 
 #include "../crypto/buffer/buffer.h"
 #ifndef OPENSSL_NO_COMP
