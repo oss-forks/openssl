@@ -109,9 +109,9 @@
 #define CERT_SYSTEM_STORE_CURRENT_USER			0x00010000
 #endif 
 
-#include "../crypto/engine.h>
-#include "../crypto/pem.h>
-#include "../crypto/x509v3.h>
+#include "../crypto/engine/engine.h"
+#include "../crypto/pem/pem.h"
+#include "../crypto/x509v3/x509v3.h"
 
 #include "e_capi_err.h"
 #include "e_capi_err.c"
