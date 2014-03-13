@@ -7,12 +7,15 @@ IF(OPENSSL_REPORTED_HEADER_FOUND OR EXISTS "${OPENSSL_INCLUDE_DIR}/openssl/opens
 	ADD_DEFINITIONS(
 		"-DOPENSSL_OPENSSLCONF_H=\"${OPENSSL_INCLUDE_DIR}/openssl/opensslconf.h\""
 		"-DOPENSSL_AES_H=\"${OPENSSL_INCLUDE_DIR}/openssl/aes.h\""
+		"-DOPENSSL_SSL_H=\"${OPENSSL_INCLUDE_DIR}/openssl/ssl.h\""
 		"-DOPENSSL_SHA_H=\"${OPENSSL_INCLUDE_DIR}/openssl/sha.h\""
 		"-DOPENSSL_MD5_H=\"${OPENSSL_INCLUDE_DIR}/openssl/md5.h\""
 		"-DOPENSSL_EVP_H=\"${OPENSSL_INCLUDE_DIR}/openssl/evp.h\""
+		"-DOPENSSL_ERR_H=\"${OPENSSL_INCLUDE_DIR}/openssl/err.h\""
 		"-DOPENSSL_HMAC_H=\"${OPENSSL_INCLUDE_DIR}/openssl/hmac.h\""
 		"-DOPENSSL_BN_H=\"${OPENSSL_INCLUDE_DIR}/openssl/bn.h\""
 		"-DOPENSSL_PEM_H=\"${OPENSSL_INCLUDE_DIR}/openssl/pem.h\""
 		"-DOPENSSL_RAND_H=\"${OPENSSL_INCLUDE_DIR}/openssl/rand.h\""
+		"-DOPENSSL_X509V3_H=\"${OPENSSL_INCLUDE_DIR}/openssl/x509v3.h\""
 	)
 ENDIF()
