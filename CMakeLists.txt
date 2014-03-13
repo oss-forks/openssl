@@ -811,6 +811,7 @@ ADD_LIBRARY(crypto STATIC EXCLUDE_FROM_ALL
 )
 
 SET_SOURCE_FILES_PROPERTIES(
+		crypto/des/ncbc_enc.c
 		engines/e_4758cca_err.c
 		engines/e_aep_err.c
 		engines/e_atalla_err.c
@@ -827,6 +828,10 @@ SET_SOURCE_FILES_PROPERTIES(
 
 IF(ZLIB_FOUND)
 	TARGET_LINK_LIBRARIES(crypto ${ZLIB_LIBRARIES})
+ENDIF()
+
+IF(WIN32)
+	TARGET_LINK_LIBRARIES(crypto crypt32)
 ENDIF()
 
 ADD_LIBRARY(ssl STATIC EXCLUDE_FROM_ALL
@@ -953,3 +958,7 @@ ADD_EXECUTABLE(openssl EXCLUDE_FROM_ALL
 )
 
 TARGET_LINK_LIBRARIES(openssl ssl crypto)
+
+IF(WIN32)
+	TARGET_LINK_LIBRARIES(openssl wsock32)
+ENDIF()
