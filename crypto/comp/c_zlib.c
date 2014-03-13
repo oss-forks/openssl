@@ -22,8 +22,8 @@ static COMP_METHOD zlib_method_nozlib={
 #undef ZLIB_SHARED
 #else
 
-#ifdef ZLIB_H
-#include ZLIB_H
+#ifdef ZLIB_ZLIB_H
+#include ZLIB_ZLIB_H
 #else
 #include <zlib.h>
 #endif
