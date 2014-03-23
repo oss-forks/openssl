@@ -492,7 +492,7 @@ static unsigned int _strlen31(const char *str)
 #      endif
 #      if !defined(IPPROTO_IP)
          /* winsock[2].h was included already? */
-#        include <winsock.h>
+#        include <winsock2.h>
 #      endif
 #      ifdef getservbyname
 #        undef getservbyname

@@ -193,7 +193,7 @@
 				  */
 
 #ifdef OPENSSL_SYS_WINDOWS
-#include <winsock.h>
+#include <winsock2.h>
 #else
 #include OPENSSL_UNISTD
 #endif
